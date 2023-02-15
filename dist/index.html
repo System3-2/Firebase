@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="text-xl font-bold underline text-emerald-500 text-center mt-4 ">
+    Hello firebase
+  </h1>
+
+  <section id="container" class="p-4 m-4 flex items-center justify-center flex-col text-center gap-4"></section>
+
+  <section class="m-4 p-4 flex items-center justify-center gap-4 flex-col">
+    <form class="add flex flex-col gap-6 p-4 items-center justify-center shadow-lg shadow-slate-400">
+      <label for="author" class="block text-2xl text-black font-bold">Author:</label>
+      <input type="text" name="author" id="author"
+        class="p-2 flex w-full bg-slate-200 border-4 rounded-sm border-slate-300">
+      <label for="book" class="block text-2xl text-black font-bold">Book:</label>
+      <input type="text" name="book" id="book"
+        class="p-2 flex w-full bg-slate-200 border-4 rounded-sm border-slate-300">
+      <button type="submit"
+        class="uppercase px-4 py-2 rounded mt-4 bg-emerald-500 shadow-lg shadow-slate-300 font-bold ">Add a
+        book</button>
+    </form>
+
+    <form class="delete flex flex-col gap-6 p-4 items-center justify-center shadow-lg shadow-slate-400">
+      <label for="author" class="block text-2xl text-black font-bold">Book ID:</label>
+      <input type="text" name="id" id="id"
+        class="p-2 flex w-full bg-slate-200 border-4 rounded-sm border-slate-300">
+      <button type="submit"
+        class="uppercase px-4 py-2 rounded mt-4 bg-emerald-500 shadow-lg shadow-slate-300 font-bold ">Add a
+        book</button>
+    </form>
+
+  </section>
+</body>
+<script src="bundle.js"></script>
+
+</html>
