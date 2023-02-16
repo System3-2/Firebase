@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase</title>
+  <link rel="icon" type="x-image/icon" href="https://cdn.worldvectorlogo.com/logos/firebase-1.svg">
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body>
+  <h1 class="text-3xl font-bold underline text-center mt-4">
+    Firebase Auth
+  </h1>
+
+  <section class="p-4 m-4 flex items-center justify-center gap-4 space-x-2 space-y-2 flex-col">
+
+    <form class="flex flex-col gap-2 p-2 justify-center items-center border-4 border-black" id="signup" method="post">
+
+      <div class="flex flex-col gap-2 p-2 justify-center items-center">
+        <label for="email" class="block text-lg font-bold ">Email</label>
+        <input type="email" name="email" id="email"
+          class="px-4 py-2 bg-slate-200 rounded-sm capitalize font-bold text-black" placeholder="email">
+      </div>
+
+      <div class="flex flex-col gap-2 p-2 justify-center items-center">
+        <label for="password" class="block text-lg font-bold ">Password</label>
+        <input type="password" name="password" id="password"
+          class="px-4 py-2 bg-slate-200 rounded-sm capitalize font-bold text-black" placeholder="password">
+      </div>
+
+      <button class="px-4 py-2 bg-red-500 font-bold text-black rounded-lg">Signup</button>
+    </form>
+
+    <form class="flex flex-col gap-2 p-2 justify-center items-center border-4 border-black" id="signin" method="post">
+
+      <div class="flex flex-col gap-2 p-2 justify-center items-center">
+        <label for="email" class="block text-lg font-bold ">Email</label>
+        <input type="email" name="email" id="email"
+          class="px-4 py-2 bg-slate-200 rounded-sm capitalize font-bold text-black" placeholder="email">
+      </div>
+
+      <div class="flex flex-col gap-2 p-2 justify-center items-center">
+        <label for="password" class="block text-lg font-bold ">Password</label>
+        <input type="password" name="password" id="password"
+          class="px-4 py-2 bg-slate-200 rounded-sm capitalize font-bold text-black" placeholder="password">
+      </div>
+
+      <button class="px-4 py-2 bg-red-500 font-bold text-black rounded-lg">Login</button>
+    </form>
+
+    <button class="px-4 py-2 bg-red-500 font-bold text-black rounded-lg" id="logout">Logout</button>
+
+    
+  </section>
+
+</body>
+<script src="bundle.js"></script>
+
+</html>
